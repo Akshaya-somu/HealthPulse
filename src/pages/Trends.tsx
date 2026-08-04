@@ -8,7 +8,7 @@ const Trends = () => {
   const [allData, setAllData] = useState<any[]>([]);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:5000/api/health/history")
+    fetch("https://healthpulse-backend-a5nr.onrender.com/api/health/history")
       .then((res) => res.json())
       .then((data) => setAllData(data))
       .catch((err) => console.error("History API error:", err));

@@ -20,7 +20,7 @@ const Profile = () => {
   const [dailySummary, setDailySummary] = useState<any>(null);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:5000/api/health/summary")
+    fetch("https://healthpulse-backend-a5nr.onrender.com/api/health/summary")
       .then((res) => res.json())
       .then((data) => setDailySummary(data))
       .catch((err) => console.error("Summary API error:", err));
@@ -135,7 +135,7 @@ const Profile = () => {
                 <div
                   className={cn(
                     "mb-3 flex h-10 w-10 items-center justify-center rounded-xl",
-                    item.color.split(" ")[1]
+                    item.color.split(" ")[1],
                   )}
                 >
                   <item.icon

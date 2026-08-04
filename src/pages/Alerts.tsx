@@ -10,7 +10,7 @@ const Alerts = () => {
 
   // Fetch alerts from backend
   useEffect(() => {
-    fetch("http://127.0.0.1:5000/api/health/alerts")
+    fetch("https://healthpulse-backend-a5nr.onrender.com/api/health/alerts")
       .then((res) => res.json())
       .then((data) => setAlerts(data))
       .catch((err) => console.error("Alerts API error:", err));
@@ -84,7 +84,7 @@ const Alerts = () => {
                   "rounded-lg px-4 py-2 text-sm font-medium capitalize transition-all",
                   filter === f
                     ? "bg-card text-foreground shadow-sm"
-                    : "text-muted-foreground hover:text-foreground"
+                    : "text-muted-foreground hover:text-foreground",
                 )}
               >
                 {f}

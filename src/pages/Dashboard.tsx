@@ -24,7 +24,7 @@ const Dashboard = () => {
   const [data, setData] = useState<any>(null);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:5000/api/health/current")
+    fetch("https://healthpulse-backend-a5nr.onrender.com/api/health/current")
       .then((res) => res.json())
       .then((apiData) => setData(apiData))
       .catch((err) => console.error("API error:", err));
