@@ -16,6 +16,12 @@ CORS(app)
 # -------------------------------------------------
 model = joblib.load("rf_health_model.pkl")
 
+@app.route("/")
+def home():
+    return jsonify({
+        "message": "HealthPulse Backend API is running successfully!",
+        "status": "success"
+    })
 @app.route("/api/health/current")
 def current_health():
     # Simulated incoming wearable data
