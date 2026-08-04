@@ -2,6 +2,7 @@ from flask import Flask, jsonify
 from datetime import datetime
 import random
 import joblib
+import os
 import pandas as pd
 from flask_cors import CORS
 
@@ -136,4 +137,5 @@ def daily_summary():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
