@@ -2,6 +2,12 @@
 
 HealthPulse is a smart, ML-powered health monitoring dashboard that analyzes real-time wearable data to track vital signs, detect anomalies, and generate health alerts.  
 The system focuses on **early detection**, **continuous monitoring**, and **data-driven health insights**.
+---
+
+🌐 Live Demo
+Frontend: https://health-pulse-five.vercel.app/
+
+Backend API: https://healthpulse-backend-a5nr.onrender.com/
 
 ---
 
