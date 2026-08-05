@@ -90,7 +90,8 @@ HealthPulse transforms this data into **meaningful insights** that help users un
 
 health-harmony-hub-main/
 │
-├── backend/
+├── backend
+│   ├── requirements.txt
 │   ├── app.py
 │   ├── train_models.py
 │   └── models/
@@ -102,6 +103,7 @@ health-harmony-hub-main/
 ├── index.html
 ├── README.md
 └── package.json
+└── vercel.json
 
 ```
 
